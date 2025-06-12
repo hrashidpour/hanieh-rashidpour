@@ -93,7 +93,7 @@ const Education = () => {
                         </div>
                         <p className="text-navy-700 font-medium mb-3">{edu.focus}</p>
                         <ul className="space-y-1">
-                          {edu.details.map((detail, idx) => (
+                          {edu.details?.map((detail, idx) => (
                             <li key={idx} className="text-gray-600 text-sm flex items-start">
                               <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-2 mr-2 flex-shrink-0"></div>
                               {detail}
