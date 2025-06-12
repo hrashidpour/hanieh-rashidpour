@@ -35,10 +35,10 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Reset Permissions for Jekyll Destination Folder
-        run: chmod -R u+w _site
+      - name: Forcefully Reset Permissions for Jekyll Destination Folder
+        run: sudo chmod -R u+w _site
       - name: Forcefully Clear Jekyll Destination Folder
-        run: rm -rf _site/*
+        run: sudo rm -rf _site/*
       - name: Build with Vite
         run: npm install && npm run build
       - name: Copy Vite Build Output to Jekyll Destination
