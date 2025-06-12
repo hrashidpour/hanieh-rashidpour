@@ -35,7 +35,9 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Clear Jekyll Destination Folder
+      - name: Reset Permissions for Jekyll Destination Folder
+        run: chmod -R u+w _site
+      - name: Forcefully Clear Jekyll Destination Folder
         run: rm -rf _site/*
       - name: Build with Vite
         run: npm install && npm run build
