@@ -20,7 +20,7 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                {['About', 'Research', 'Publications', 'Education', 'Contact'].map((item) => (
+                {['About', 'Publications', 'Education', 'Contact'].map((item) => (
                   <li key={item}>
                     <button
                       onClick={() => document.getElementById(item.toLowerCase())?.scrollIntoView({ behavior: 'smooth' })}

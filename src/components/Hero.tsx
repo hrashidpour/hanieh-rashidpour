@@ -40,10 +40,10 @@ const Hero = () => {
               Get In Touch
             </a>
             <a
-              href="#research"
+              href="#publications"
               className="border-2 border-white text-white hover:bg-white hover:text-navy-800 px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:transform hover:scale-105"
             >
-              View Research
+              View Publications
             </a>
           </div>
 

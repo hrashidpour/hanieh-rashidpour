@@ -1,43 +1,16 @@
 import React from 'react';
-import { BookOpen, ExternalLink, Download, Calendar } from 'lucide-react';
+import { BookOpen, ExternalLink, Calendar } from 'lucide-react';
 
 const Publications = () => {
   const publications = [
     {
-      title: 'Collaborative Virtual Reality Systems: Enhancing Multi-User Interaction in Immersive Environments',
-      authors: 'H. Rashidpour, et al.',
-      venue: 'International Conference on Virtual Reality and Augmented Reality',
-      year: '2024',
+      title: 'Asymmetric Cross-Reality Collaboration for Urban Sustainability Education',
+      authors: 'Argo, E., Eisalou, E. K., Rashidpour, H., Schwertfeger, S., Nasibli, N., & Grandi, J.',
+      venue: 'IEEE VR Conference',
+      year: '2025',
       type: 'Conference Paper',
       status: 'Published',
-      abstract: 'This paper presents novel approaches to collaborative virtual reality systems, focusing on improving multi-user interaction and communication in shared virtual environments...'
-    },
-    {
-      title: 'Augmented Reality Interfaces for Educational Collaboration: Design Principles and Implementation',
-      authors: 'H. Rashidpour, et al.',
-      venue: 'Journal of Educational Technology Research',
-      year: '2023',
-      type: 'Journal Article',
-      status: 'Published',
-      abstract: 'We investigate the effectiveness of AR-based collaborative interfaces in educational settings, proposing design principles for enhanced learning experiences...'
-    },
-    {
-      title: 'Human-Computer Interaction in Mixed Reality Environments: A Comprehensive Study',
-      authors: 'H. Rashidpour, et al.',
-      venue: 'ACM Symposium on User Interface Software and Technology',
-      year: '2023',
-      type: 'Conference Paper',
-      status: 'Published',
-      abstract: 'This study examines the impact of mixed reality interfaces on user experience and task performance in collaborative environments...'
-    },
-    {
-      title: 'Machine Learning Approaches for Gesture Recognition in Collaborative Virtual Environments',
-      authors: 'H. Rashidpour, et al.',
-      venue: 'International Journal of Human-Computer Studies',
-      year: '2024',
-      type: 'Journal Article',
-      status: 'Under Review',
-      abstract: 'We propose novel machine learning techniques for improving gesture recognition accuracy in multi-user virtual reality systems...'
+      doi: 'https://doi.org/10.1109/VRW66409.2025.00415'
     }
   ];
 
@@ -76,33 +49,27 @@ const Publications = () => {
                             {pub.year}
                           </span>
                           <span className="font-medium">{pub.venue}</span>
-                          <span className={`px-2 py-1 rounded-full text-xs font-semibold ${
-                            pub.status === 'Published' 
-                              ? 'bg-green-100 text-green-800'
-                              : 'bg-yellow-100 text-yellow-800'
-                          }`}>
+                          <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">
                             {pub.status}
                           </span>
                           <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
                             {pub.type}
                           </span>
                         </div>
-                        <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                          {pub.abstract}
-                        </p>
                       </div>
                     </div>
                   </div>
                   
-                  <div className="flex flex-col sm:flex-row lg:flex-col gap-2">
-                    <button className="flex items-center justify-center px-4 py-2 bg-navy-600 text-white rounded-lg hover:bg-navy-700 transition-colors duration-200 text-sm font-medium">
+                  <div>
+                    <a
+                      href={pub.doi}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center px-4 py-2 bg-navy-600 text-white rounded-lg hover:bg-navy-700 transition-colors duration-200 text-sm font-medium"
+                    >
                       <ExternalLink size={14} className="mr-2" />
                       View Paper
-                    </button>
-                    <button className="flex items-center justify-center px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors duration-200 text-sm font-medium">
-                      <Download size={14} className="mr-2" />
-                      Download PDF
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

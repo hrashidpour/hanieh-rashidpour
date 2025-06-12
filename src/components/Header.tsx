@@ -18,6 +18,8 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const menuItems = ['About', 'Publications', 'Education', 'Contact'];
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg' : 'bg-transparent'
@@ -28,7 +30,7 @@ const Header = () => {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {['About', 'Research', 'Publications', 'Education', 'Contact'].map((item) => (
+            {menuItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -51,7 +53,7 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg">
-            {['About', 'Research', 'Publications', 'Education', 'Contact'].map((item) => (
+            {menuItems.map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
