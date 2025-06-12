@@ -37,6 +37,8 @@ jobs:
           destination: ./_site
       - name: Build with Vite
         run: npm install && npm run build
+      - name: Copy Vite Build Output to Jekyll Destination
+        run: cp -r dist/* _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
