@@ -35,6 +35,8 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Clear Jekyll Destination Folder
+        run: rm -rf _site/*
       - name: Build with Vite
         run: npm install && npm run build
       - name: Copy Vite Build Output to Jekyll Destination
