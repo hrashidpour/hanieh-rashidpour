@@ -41,8 +41,10 @@ jobs:
         run: sudo rm -rf _site/*
       - name: Build with Vite
         run: npm install && npm run build
+      - name: Recreate Jekyll Destination Folder
+        run: sudo rm -rf _site && mkdir _site
       - name: Copy Vite Build Output to Jekyll Destination
-        run: cp -r dist/* _site/
+        run: sudo cp -r dist/* _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
