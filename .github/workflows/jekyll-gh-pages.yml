@@ -35,6 +35,8 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Build with Vite
+        run: npm install && npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

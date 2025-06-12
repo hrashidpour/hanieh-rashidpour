@@ -5,7 +5,7 @@ title: Hanieh Rashidpour
 email: example@example.com
 description: >-
   A personal website showcasing research, publications, and education.
-baseurl: "" # Adjust if deploying to a subdirectory
+baseurl: "/hanieh-rashidpour" # Adjusted for subdirectory deployment
 url: "https://hrashidpour.github.io" 
 
 # Build settings
