@@ -11,38 +11,36 @@ const Education = () => {
       focus: 'Collaborative Systems in Virtual and Augmented Reality',
       details: [
         'Research focus on multi-user VR/AR interaction systems',
-        'Graduate Research Assistant',
-        'Teaching Assistant for Computer Graphics and HCI courses',
-        'Member of the Immersive Technology Research Lab'
+        'Graduate Research Assistant'
       ],
       status: 'current'
     },
     {
-      degree: 'Master of Science in Computer Science',
-      institution: 'Augusta University',
-      location: 'Augusta, GA, USA',
-      period: '2020 - 2022',
-      focus: 'Computer Science with focus on AR/VR Technologies',
-      details: [
-        'Specialized in immersive technology research',
-        'Strong foundation in computer graphics and HCI',
-        'Research in VR interaction paradigms',
-        'Collaborative systems development'
-      ],
+      degree: 'Master of Science in System Telecommunication Engineering',
+      institution: 'Malek University',
+      location: 'Tehran, Iran',
+      period: '2018 - 2021',
+      focus: 'Providing a Method for Identification and Classification of Media Access Control (MAC) Protocols in ISM band',
+      // details: [
+      //   'Specialized in immersive technology research',
+      //   'Strong foundation in computer graphics and HCI',
+      //   'Research in VR interaction paradigms',
+      //   'Collaborative systems development'
+      // ],
       status: 'completed'
     },
     {
-      degree: 'Bachelor of Science in Computer Engineering',
-      institution: 'Previous Institution',
-      location: 'Iran',
-      period: '2016 - 2020',
-      focus: 'Computer Engineering with Software Development Focus',
-      details: [
-        'Strong foundation in computer science fundamentals',
-        'Software engineering and system design',
-        'Early exposure to emerging technologies',
-        'Academic excellence throughout program'
-      ],
+      degree: 'Bachelor of Science in Electrical Engineering',
+      institution: 'Bu-Ali Sina University',
+      location: 'Hamedan, Iran',
+      period: '2012 - 2016',
+      focus: 'Studying and Assessing on Ultrasonic Sensors',
+      // details: [
+      //   'Strong foundation in computer science fundamentals',
+      //   'Software engineering and system design',
+      //   'Early exposure to emerging technologies',
+      //   'Academic excellence throughout program'
+      // ],
       status: 'completed'
     }
   ];
@@ -52,22 +50,23 @@ const Education = () => {
       title: 'Graduate Research Assistant',
       organization: 'Augusta University',
       description: 'Full research assistantship for PhD studies in AR/VR collaboration'
-    },
-    {
-      title: 'Published Researcher',
-      organization: 'Academic Community',
-      description: 'Multiple publications in AR/VR and collaborative systems'
-    },
-    {
-      title: 'Conference Presenter',
-      organization: 'International Conferences',
-      description: 'Presented research at various academic conferences'
-    },
-    {
-      title: 'Teaching Assistant',
-      organization: 'Augusta University',
-      description: 'Supporting undergraduate courses in computer science'
     }
+    // },
+    // {
+    //   title: 'Published Researcher',
+    //   organization: 'Academic Community',
+    //   description: 'Multiple publications in AR/VR and collaborative systems'
+    // },
+    // {
+    //   title: 'Conference Presenter',
+    //   organization: 'International Conferences',
+    //   description: 'Presented research at various academic conferences'
+    // },
+    // {
+    //   title: 'Teaching Assistant',
+    //   organization: 'Augusta University',
+    //   description: 'Supporting undergraduate courses in computer science'
+    // }
   ];
 
   return (
