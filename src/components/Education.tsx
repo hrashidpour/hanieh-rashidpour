@@ -4,10 +4,10 @@ import { GraduationCap, Award, MapPin, Calendar } from 'lucide-react';
 const Education = () => {
   const education = [
     {
-      degree: 'Ph.D. in Computer Science',
+      degree: 'Ph.D. in Computer and Cyber Sciences',
       institution: 'Augusta University',
       location: 'Augusta, GA, USA',
-      period: '2022 - Present',
+      period: '2025 - Present',
       focus: 'Collaborative Systems in Virtual and Augmented Reality',
       details: [
         'Research focus on multi-user VR/AR interaction systems',
